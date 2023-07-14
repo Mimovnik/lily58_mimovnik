@@ -30,3 +30,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAPPING_TERM 100
 
 #define SPLIT_WPM_ENABLE
+#define WPM_SAMPLE_SECONDS 1   
+#define WPM_SAPLE_PERIODS 5
+#define WPM_ALLOW_COUNT_REGRESSION
+#define WPM_UNFILTERED

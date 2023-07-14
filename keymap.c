@@ -4,9 +4,9 @@
 #ifdef OLED_ENABLE
 #include <stdio.h>
 #define IDLE_FRAMES 5
-#define IDLE_SPEED 30
+#define IDLE_SPEED 2
 #define TAP_FRAMES 2
-#define TAP_SPEED 40
+#define TAP_SPEED 10
 #define ANIM_FRAME_DURATION 200
 #define ANIM_SIZE 512
 
@@ -17,7 +17,7 @@ uint32_t anim_sleep = 0;
 uint8_t current_idle_frame = 0;
 uint8_t current_tap_frame = 0;
 
-static long int oled_timeout = 600000; // 10 minutes
+static long int oled_timeout = 300000; // 5 minutes
 #endif
 
 enum layer_number {
@@ -279,10 +279,10 @@ static void render_anim(void) {
 bool oled_task_user(void) {
     if (is_keyboard_master()) {
         // Left side
-        render_status();
+        render_anim();
     } else {
         // Right side
-        render_anim();
+        render_status();
     }
 	
 	return 0;
