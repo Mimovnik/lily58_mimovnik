@@ -279,10 +279,10 @@ static void render_anim(void) {
 bool oled_task_user(void) {
     if (is_keyboard_master()) {
         // Left side
-        render_anim();
+        render_status();
     } else {
         // Right side
-        render_status();
+        render_anim();
     }
 	
 	return 0;
