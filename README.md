@@ -1,3 +1,10 @@
+This project contains custom layout for a lily58 keyboard using ZMK firmware.
+
+This keyboard has XIAO nRF52480 BLE microcontroller.
+
+Currently ZMK only supports wireless communication.
+
+For wired keyboard (with RP2040) I have seperate repo with qmk ([qmk-lily58-layout](https://github.com/Mimovnik/qmk-lily58-layout))
 # Layout
 
 ```
